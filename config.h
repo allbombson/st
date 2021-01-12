@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=19:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Liberation Mono:pixelsize=20:antialias=true:autohint=true";
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,9 +17,9 @@ static int borderpx = 2;
  * 5: value of shell in config.h
  */
 static char *shell = "/bin/sh";
-char *utmp = NULL;
+char *utmp = 0;
 /* scroll program: to enable use a string like "scroll" */
-char *scroll = NULL;
+char *scroll = 0;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
